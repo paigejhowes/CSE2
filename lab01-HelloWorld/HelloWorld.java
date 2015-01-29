@@ -1,5 +1,5 @@
 //Paige Howes
-//Hellow World Java Program
+//Hello World Java Program
 //
 //  first compile the program
 //      javac HelloWorld.java
