@@ -66,8 +66,7 @@ public class Arithmetic {
         //calculate totals
         totalWithoutTax = totalSockCost$ + totalGlassCost$ + totalEnvelopeCost$;
         totalTax = taxSock + taxGlass + taxEnvelope;
-        totalWithTax = (totalWithoutTax + totalTax) * 100;
-        totalWithTax = (int) totalWithTax/100.0;
+        totalWithTax = totalWithoutTax + totalTax;
         
         //print totals
         System.out.println("Total cost of items without tax: $ " + totalWithoutTax);
