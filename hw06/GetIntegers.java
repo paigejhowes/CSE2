@@ -8,15 +8,19 @@ import java.util.Scanner;
 public class GetIntegers {
     //main method
     public static void main (String [] args) {
+        
         //define scanner
         Scanner myScanner = new Scanner(System.in);
+        
         //define integers
         int i = 0;
         int total = 0;
+        
         //loop to ask for imput
         while (i < 5) {
             System.out.print("Enter integer: ");
             //if statement to meet boundaries
+            
             if (myScanner.hasNextInt()) {
                 //if to check if positive
                 int integer = myScanner.nextInt();
@@ -32,7 +36,10 @@ public class GetIntegers {
                 System.out.println("Please enter an integer.");
                 return;
             }//end of else statement
-        }//end of while loop
+         }//end of while loop
+        
+        //print total
         System.out.println("The total of the integers is " + total + ".");
+        
     }//end of main method
 }//end of class
