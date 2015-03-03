@@ -20,6 +20,7 @@ public class MakeSymbols {
             } while (number > 0);
             System.out.println();
         }
+        
         else {
             System.out.print("The output pattern: ");
             do {
