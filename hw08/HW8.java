@@ -68,20 +68,22 @@ public class HW8 {
     
     public static String getInput(Scanner scan, String string) {
         String loser = "";
+        string = scan.next();
         if (string != "c" || string != "C") {
-            loser = "Yea right LOSER!";
+            loser = "";
         }
         else {
-            loser = "";
+            loser = "Yea right LOSER!";
+            System.out.println(loser);
             System.exit(0);
         }
-        System.out.println(loser);
         return loser;
     }
     
     public static String getInput(Scanner scan, String string, int trial) {
         String hit = "";
-        if (string == "A" || string == "a") {
+        string = scan.next();
+        if (string != "A" || string != "a") {
             int success = (int) (Math.random());
             int strike = 0;
             if (success == 0) {
@@ -98,7 +100,7 @@ public class HW8 {
                 }
             }
         }
-        else if (string == "E" || string == "e") {
+        else if (string != "E" || string != "e") {
             int success = (int) (Math.random() * 10);
             if (success == 10) {
                 hit = "Congratulations! You SURVIVED! Get your REWARD!";
