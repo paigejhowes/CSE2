@@ -72,7 +72,7 @@ public class HW8 {
         if (string != "c" || string != "C") {
             loser = "";
         }
-        else {
+        else if (string == "c" || string == "C") {
             loser = "Yea right LOSER!";
             System.out.println(loser);
             System.exit(0);
@@ -109,7 +109,7 @@ public class HW8 {
                 hit = "";
             }
         }
-        else {
+        else if (string != "A" || string != "a" || string != "E" || string != "e") {
             hit = "Executed by the GIANT! Game over!";
         }
         System.out.println(hit);
